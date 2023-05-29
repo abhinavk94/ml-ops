@@ -31,6 +31,7 @@ def index():
     img_arr = np.array(img_greyscale)
     img_arr32 = img_arr.astype(np.float32)
     img_arr32 = img_arr32.reshape((1, 1, 28, 28))
+    #comment
 
     payload = json.dumps(img_arr32.tolist())
 
